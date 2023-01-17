@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: url("./../images/bg.png") center center fixed no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: "Sora";
+}
+
+/* Resetting style of all a tags */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NavBar styling */
+nav {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.nav__logo {
+  color: red;
+  font-weight: 500;
+}
+.nav__items {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.nav__items a {
+  transition: all 0.3s ease-out;
+}
+.nav__items a:hover {
+  color: rgb(255, 168, 168);
+  transform: scale(105%);
+}
+/* navbar styling end */
+
+/* hero section styling */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 90vh;
+  gap: 4rem;
+}
+.hero__image {
+  width: 25%;
+}
+.hero__text {
+  font-size: 4rem;
+}
+.header_text {
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+.faded_text {
+  color: red;
+  opacity: 0.7;
+}
+.hero__button {
+  padding: 1rem 2.5rem;
+  background: #ff2d57;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+/* hero section end */
+
+/* user social icons */
+.user__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: fit-content;
+  padding: 1rem 0.7rem;
+  border-radius: 3rem;
+  background: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+}
+.user__socials img {
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.user__socials img:hover {
+  transform: scale(110%) translateX(-1rem);
+}
+.ico_discord {
+  background-color: indigo;
+}
+.ico_instagram {
+  background-color: #eb3474;
+}
+.ico_twitter {
+  background-color: #29bced;
+}
+.ico_mail {
+  background-color: #39fc94;
+}
+.ico_reddit {
+  background-color: #ed749f;
+}
+.ico_github {
+  background-color: #000000;
+}
